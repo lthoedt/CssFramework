@@ -14,11 +14,70 @@
 
     <body>
 
-        <a href = "components.htm" InstantClick.init('mousedown');>Components</a>
+        <div class = "fm-navbar_wrapper fm-sticky">
+            <div class = "fm-navbar_left">
+                <label class = "fm-label_nav">
+                    <input type = "text" placeholder = "Search something..." class = "fm-input fm-input_nav" />
+                </label>
+            </div>
 
+            <div class = "fm-navbar_center">
+                <nav class = "fm-navbar">
+                    <li>
+                        <a href = "#" class = "fm-link_list">Link #1</a>
+                    </li>
+
+                    <li>
+                        <a href = "#" class = "fm-link_list">Link #2</a>
+                    </li>
+
+                    <li>
+                        <a href = "#" class = "fm-link_list">Link #3</a>
+                    </li>
+
+                    <li>
+                        <a href = "#" class = "fm-link_list">Link #4</a>
+                    </li>
+                </nav>
+            </div>
+
+            <div class = "fm-navbar_right">
+                
+                <div class = "fm-dropdown_btn" >
+                    <img src = "https://avatars1.githubusercontent.com/u/38183200?s=40&v=4" class = "fm-navbar_img fm-clickable" />
+                    <div class = "fm-navbar_dropdown">
+                        <ul>
+                            <li>
+                                <a href = "#" class = "fm-dropdown_item">Option 1</a>
+                            </li>
+
+                            <li>
+                                <a href = "#" class = "fm-dropdown_item">Option 2</a>
+                            </li>
+
+                            <li>
+                                <a href = "#" class = "fm-dropdown_item">Option 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "fm-box">
+            <a href = "components.htm" class = "fm-btn fm-btn_green" InstantClick.init('mousedown');>Components</a> <br>
+
+            <a href = "#" class = "fm-link">Normal link</a> <br>
+
+            <a href = "#" class = "fm-btn_outline fm-btn_blue" >Link with outline</a> <br>
+        </div>
         <center>
-            <input type = "text" class = "fm-input border_focus" />
+            <input type = "text" class = "fm-input fm-border_focus" placeholder = "Type something..."/>
         </center>
+
+        <div class = "fm-footer">
+                <a href = "#" class = "fm-link fm-link_grey" >Footer link #1</a>
+        </div>
         <script type = "text/javascript" src = "http://instantclick.io/v3.1.0/instantclick.min.js" data-no-instant></script>
         <script data-no-instant>InstantClick.init();</script>
     </body>
