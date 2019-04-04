@@ -274,7 +274,6 @@ input.fm-input_nav {
 }
 
 input.fm-input_nav:focus {
-    background-color: white;
     color: black;
     transition: all ease 100ms;
 }
@@ -368,4 +367,6 @@ a.fm-dropwdown_item:focus {
 .fm-dropdown_btn:hover div.fm-navbar_dropdown {
     display: block;
 }
+
+/* responsive grid */
 
