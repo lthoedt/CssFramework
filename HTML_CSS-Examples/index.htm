@@ -7,7 +7,6 @@
         <meta name=”viewport” content=”width=device-width,initial-scale=1″>
 
         <link type = "text/css" rel = "stylesheet" href = "/css frameworks/fm-main.css">
-
         <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,400i,500,500i,700,700i|Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet"> -->
 
     </head>
@@ -15,10 +14,15 @@
     <body>
 
         <div class = "fm-navbar_wrapper fm-sticky">
+            <!-- menu that is displayed when menu is for mobile -->
+            <a class="fm-navbar_icon fm-navbar_menu">
+                <object style = "margin: 5px; color: white;" data="/octicons/three-bars.svg" type="image/svg+xml"></object>
+            </a>
+
             <div class = "fm-navbar_left">
                 <label id = "poet" for = "search-input" class = "fm-label_nav">
                     <input id = "search-input" type = "text" placeholder = "Search something..." class = "fm-input fm-input_nav" />
-                    <object style = "margin: 5px; color: white;" data="/octicons/search.svg" type="image/svg+xml"></object>
+                    <object style = "margin: 5px;" data="/octicons/search.svg" type="image/svg+xml"></object>
                 </label>
             </div>
 
@@ -42,7 +46,7 @@
                 </nav>
             </div>
 
-            <div class = "fm-navbar_right">
+            <div class = "fm-navbar_right fm-navbar_stay">
                 
                 <div class = "fm-dropdown_btn" >
                     <img src = "https://avatars1.githubusercontent.com/u/38183200?s=40&v=4" class = "fm-navbar_img fm-clickable" />
@@ -65,21 +69,26 @@
             </div>
         </div>
 
-        <div class = "fm-box">
-            <a href = "components.htm" class = "fm-btn fm-btn_green" InstantClick.init('mousedown');>Components</a> <br>
+        <div class = "fm-row">
+            <div class = "fm-col fm-half">
+                <div class = "fm-box">
+                    <a href = "components.htm" class = "fm-btn fm-btn_green" InstantClick.init('mousedown');>Components</a> <br>
 
-            <a href = "#" class = "fm-link">Normal link</a> <br>
+                    <a href = "#" class = "fm-link">Normal link</a> <br>
 
-            <a href = "#" class = "fm-btn_outline fm-btn_blue" >Link with outline</a> <br>
+                    <a href = "#" class = "fm-btn_outline fm-btn_blue" >Link with outline</a> <br>
+                </div>
+            </div>
+
+            <div class = "fm-col fm-half">
+                <input type = "text" class = "fm-input fm-border_focus" placeholder = "Type something..."/>
+            </div>
         </div>
-
-        <center>
-            <input type = "text" class = "fm-input fm-border_focus" placeholder = "Type something..."/>
-        </center>
 
         <div class = "fm-footer">
                 <a href = "#" class = "fm-link fm-link_grey" >Footer link #1</a>
         </div>
+
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8 = " crossorigin="anonymous"></script>
         <script type = "text/javascript" src = "/JS framework/fm-main.js" data-no-instant></script>
         <script type = "text/javascript" src = "http://instantclick.io/v3.1.0/instantclick.min.js" data-no-instant></script>

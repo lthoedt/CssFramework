@@ -8,3 +8,8 @@ $(".fm-input_nav").focus(function(e) {
 }).blur(function () {
     $(this).parent().removeAttr('style');
 });
+
+$(".fm-navbar_menu").click(function() {
+    $(".fm-navbar_wrapper").toggleClass("responsive");
+    console.log("check");
+})
