@@ -14,8 +14,114 @@
 
     <body>
 
-        <a href = "index.htm" InstantClick.init('mousedown');>Main page</a>
+        <div class = "fm-navbar_wrapper">
+            <!-- menu that is displayed when menu is for mobile -->
+            <a class="fm-navbar_icon fm-navbar_menu">
+                <i class="fas fa-bars"></i>
+                <!-- <ion-icon name="menu"></ion-icon> -->
+                <!-- <object style = "margin: 5px; color: white;" data="/octicons/three-bars.svg" type="image/svg+xml"></object> -->
+            </a>
 
+            <div class = "fm-navbar_left">
+                <!-- <i class="fab fa-github fm-navbar_icon"></i> -->
+                <label id = "poet" for = "search-input" class = "fm-label_nav">
+                    <input id = "search-input" type = "text" placeholder = "Search something..." class = "fm-input fm-input_nav" />
+                    <!-- <object style = "margin: 5px;" data="/octicons/search.svg" type="image/svg+xml"></object> -->
+                    <i style = "margin: 5px; opacity: 0.5;" class="fas fa-search"></i>
+                    <!-- <ion-icon name="search"></ion-icon> -->
+                </label>
+            </div>
+
+            <div class = "fm-navbar_left">
+                <nav class = "fm-navbar">
+                    <li>
+                        <a href = "index.htm" class = "fm-link_list">Home</a>
+                    </li>
+
+                    <li>
+                        <a href = "components.htm" class = "fm-link_list">Components</a>
+                    </li>
+
+                    <li>
+                        <a href = "guide.htm" class = "fm-link_list">Guide</a>
+                    </li>
+
+                    <li>
+                        <a href = "https://github.com/lthoedt/CssFramework" target = "_blank" class = "fm-link_list">Github</a>
+                    </li>
+                </nav>
+            </div>
+
+            <div class = "fm-navbar_right fm-navbar_stay">
+                
+                <!-- <div class = "fm-dropdown_btn" > -->
+                <div>
+                    <img src = "https://avatars1.githubusercontent.com/u/38183200?s=40&v=4" class = "fm-navbar_img fm-clickable fm-dropdown_btn" />
+                    <div class = "fm-navbar_dropdown">
+                        <ul>
+                            <li>
+                                <a href = "#" class = "fm-dropdown_item">Option 1</a>
+                            </li>
+
+                            <li>
+                                <a href = "#" class = "fm-dropdown_item">Option 2</a>
+                            </li>
+
+                            <li>
+                                <a href = "#" class = "fm-dropdown_item">Option 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <div class = "fm-sidebar" style = "top: 78px;">
+            <div class = "fm-list_title">Components</div>
+            <div class = "fm-list"> 
+                <span class = "fm-list_item">Forms</span>
+                <span class = "fm-list_item">Inputs</span>
+                <span class = "fm-list_item">Buttons</span>
+            </div>
+        </div>
+
+        <div class = "fm-container_full" style = "width: 80vw; margin-left: 20vw;">
+            <div>
+                <h1>Forms</h1>
+                <div class = "fm-box">
+                    html page
+                </div>
+            </div>
+
+            <div>
+                <div class = "fm-box">
+                    code
+                </div>
+            </div>
+        </div>
+
+        <div class = "fm-container_full" style = "width: 80vw; margin-left: 20vw;">
+            <div>
+                    <h1>Inputs</h1>
+                    <div class = "fm-box">
+                        html page
+                    </div>
+                </div>
+    
+                <div>
+                    <div class = "fm-box">
+                        code
+                    </div>
+            </div>
+        </div>
+
+        <div class = "fm-footer">
+                <a href = "#" class = "fm-link fm-link_grey" >Footer link #1</a>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8 = " crossorigin="anonymous"></script>
+        <script type = "text/javascript" src = "/JS framework/fm-main.js" data-no-instant></script>
         <script type = "text/javascript" src = "http://instantclick.io/v3.1.0/instantclick.min.js" data-no-instant></script>
         <script data-no-instant>InstantClick.init();</script>
     </body>

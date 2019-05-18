@@ -1,15 +1,13 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>CSS framework | Main page</title>
+        <title>CSS framework | Components</title>
 
         <meta name = "description" content = "This is the main page of a css framework example.">
         <meta name=”viewport” content=”width=device-width,initial-scale=1″>
 
-
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <!-- <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script> -->
         <link type = "text/css" rel = "stylesheet" href = "/css frameworks/fm-main.css">
+
         <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,400i,500,500i,700,700i|Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet"> -->
 
     </head>
@@ -80,12 +78,18 @@
         </div>
 
         <div class = "fm-row">
-            <div class = "fm-container_center" style = "height: calc(100vh - 78px);">
-                <div>
-                    <h1 style = "font-size: 5em; font-weight: 300;">FrameWork</h1>
-                    <h3 style = "font-weight: 300; font-size: 1.5em;">Tired of doing CSS? <br> Use this framework to avoid it!</h3>
-                    <a href = "" class = "fm-btn fm-btn_green" style = "font-size: 2em; font-weight: 100; padding: 15px 40px;">Get started</a>
+            <div class = "fm-col fm-half">
+                <div class = "fm-box">
+                    <a href = "components.htm" class = "fm-btn fm-btn_green" InstantClick.init('mousedown');>Components</a> <br>
+
+                    <a href = "#" class = "fm-link">Normal link</a> <br>
+
+                    <a href = "#" class = "fm-btn_outline fm-btn_blue" >Link with outline</a> <br>
                 </div>
+            </div>
+
+            <div class = "fm-col fm-half">
+                <input type = "text" class = "fm-input fm-border_focus" placeholder = "Type something..."/>
             </div>
         </div>
 
